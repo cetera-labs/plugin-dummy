@@ -9,9 +9,18 @@
             "role": "Lead Developer"
         }
     ],
+    
     "require": {
 	},
-	"minimum-stability": "dev",
+    
+    "minimum-stability": "dev",
+    
+    "autoload": {
+        "psr-0": { 
+			"Dummy\\": "classes/",
+		}
+    },
+
     "extra": {
         "handle": "test",
         "id": "test"
