@@ -1,0 +1,19 @@
+{
+    "name": "cetera-labs/plugin-dummy",
+    "type": "cetera-cms-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roman Romanov",
+            "email": "nicodim@mail.ru",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+	},
+	"minimum-stability": "dev",
+    "extra": {
+        "handle": "test",
+        "id": "test"
+    }
+}
