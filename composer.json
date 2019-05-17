@@ -22,5 +22,6 @@
     },
 
     "extra": {
+        "description": "The dummy plugin for Cetera CMS"
     }
 }
