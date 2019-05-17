@@ -19,10 +19,10 @@ $this->addUserGroup(array(
 if ($this->getBo() && $this->getUser() && $this->getUser()->hasRight(-9999) ) {
 
     $this->getBo()->addModule(array(
-    	  'id'	     => 'dummy',
-    	  'position' => MENU_PLUGINS,
+    	'id'	     => 'dummy',
+    	'position' => MENU_PLUGINS,
         'name' 	   => 'Dummy plugin',
-        'icon'     => 'images/icon.gif',
+        'icon'     => '/plugins/cetera-labs.plugin-dummy/images/icon.gif',
         'class'    => 'Plugin.cetera-labs.plugin-dummy.Panel'
     ));
 
