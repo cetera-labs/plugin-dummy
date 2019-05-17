@@ -59,7 +59,24 @@ Ext.define('Plugin.cetera-labs.plugin-dummy.Panel', {
             fieldLabel: 'Biography',
             height: 200,
             anchor: '100%'
-        }],
+        }, 
+        Ext.create('Cetera.grid.Abstract', {
+            columns: [
+                {text: "ID", width: 50, dataIndex: 'id'},
+                {text: _("Название"),  flex: 1, dataIndex: 'name'}
+            ],
+            
+            store: Ext.create('Ext.data.JsonStore',{
+                fields: ['id','name'],
+                proxy: {
+                    type: 'ajax',
+                    url: '/plugins/cetera-labs.plugin-dummy/data.php'
+                },
+                autoSync: true,
+                autoLoad: true
+            })          
+        })
+        ],
         buttons: [{
             text: 'Save',
             handler: function() {
