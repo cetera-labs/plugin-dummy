@@ -22,7 +22,7 @@ if ($this->getBo() && $this->getUser() && $this->getUser()->hasRight(-9999) ) {
     	  'id'	     => 'dummy',
     	  'position' => MENU_PLUGINS,
         'name' 	   => 'Dummy plugin',
-        'icon'     => 'icon.gif',
+        'icon'     => 'images/icon.gif',
         'class'    => 'Plugin.cetera-labs.plugin-dummy.Panel'
     ));
 
